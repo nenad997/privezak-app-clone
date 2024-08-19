@@ -8,19 +8,55 @@ const BottomNavbar = () => {
       <nav className={classes.nav}>
         <ul className={classes.list}>
           <li className={classes.item}>
-            <NavLink to="o-nama">O nama</NavLink>
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? classes.active : undefined
+              }
+              end
+              to="o-nama"
+            >
+              O nama
+            </NavLink>
           </li>
           <li className={classes.item}>
-            <NavLink to="kontakt">Kontakt</NavLink>
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? classes.active : undefined
+              }
+              to="kontakt"
+            >
+              Kontakt
+            </NavLink>
           </li>
           <li className={classes.item}>
-            <NavLink to="politika-privatnosti">Politika Privatnosti</NavLink>
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? classes.active : undefined
+              }
+              to="politika-privatnosti"
+            >
+              Politika Privatnosti
+            </NavLink>
           </li>
           <li className={classes.item}>
-            <NavLink to="uslovi-koriscenja">Uslovi korišćenja</NavLink>
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? classes.active : undefined
+              }
+              to="uslovi-koriscenja"
+            >
+              Uslovi korišćenja
+            </NavLink>
           </li>
           <li className={classes.item}>
-            <NavLink to="dostava">Dostava</NavLink>
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? classes.active : undefined
+              }
+              to="dostava"
+            >
+              Dostava
+            </NavLink>
           </li>
         </ul>
       </nav>
