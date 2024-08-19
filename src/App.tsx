@@ -1,5 +1,6 @@
 import { Route, Routes, BrowserRouter, Outlet } from "react-router-dom";
 
+import MainLayout from "./components/shared/MainLayout";
 import HomePage from "./pages/Home";
 import AboutPage from "./pages/About";
 import ContactPage from "./pages/Contact";
@@ -11,16 +12,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route
-          element={
-            <>
-              <main>
-                <Outlet />
-              </main>
-              <div>Hello</div>
-            </>
-          }
-        >
+        <Route element={<MainLayout />}>
           <Route path="/" Component={HomePage} />
           <Route path="/o-nama" Component={AboutPage} />
           <Route path="/kontakt" Component={ContactPage} />
