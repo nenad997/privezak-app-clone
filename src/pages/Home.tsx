@@ -1,5 +1,7 @@
+import HomeLayout from "../components/content/HomeLayout";
+
 const HomePage = () => {
-  return <h1>The Home Page</h1>;
+  return <HomeLayout />;
 };
 
 export default HomePage;

@@ -14,7 +14,9 @@ const App = () => {
         <Route
           element={
             <>
-              <Outlet />
+              <main>
+                <Outlet />
+              </main>
               <div>Hello</div>
             </>
           }
