@@ -5,7 +5,7 @@ import BottomNavbar from "./BottomNavbar";
 const MainLayout = () => {
   return (
     <>
-      <main>
+      <main className="main">
         <Outlet />
       </main>
       <BottomNavbar />

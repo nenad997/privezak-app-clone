@@ -1,0 +1,126 @@
+.contact {
+  margin-top: 10rem;
+  display: flex;
+  align-items: center;
+}
+
+.contact__form {
+  flex: 2;
+
+  & h1 {
+    font-size: 4rem;
+    color: #336eeb;
+    margin-bottom: 1rem;
+  }
+}
+
+.form {
+  padding: 1rem;
+  gap: 3rem;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+.control {
+  flex: 1;
+
+  & input,
+  & label {
+    width: 80%;
+  }
+
+  & input {
+    padding: 0.8rem 1.2rem;
+    font-size: 2rem;
+    border: 0.7px solid #6d9f9f;
+    border-radius: 1.3rem;
+  }
+
+  & label {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #d4353e;
+  }
+}
+
+.text__area {
+  & label {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #d4353e;
+  }
+
+  & textarea {
+    resize: none;
+    border: 0.7px solid #6d9f9f;
+    width: 90%;
+    height: 20rem;
+    border-radius: 1.3rem;
+  }
+}
+
+.button {
+  padding: 1.2rem 4rem;
+  margin-top: 2rem;
+  cursor: pointer;
+  background-color: #336eeb;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 1rem;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+}
+
+.button:hover {
+  background-color: #e7232f;
+}
+
+.info {
+  border: 1px solid green;
+  padding: 1rem;
+  flex: 1;
+  align-self: flex-start;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d5f3f6;
+  border: 1px solid #336eeb;
+  border-radius: 1rem;
+  margin-top: 4rem;
+
+  & .left {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex: 1;
+
+    & span:first-child {
+      color: #d4353e;
+    }
+
+    & span:last-child {
+      color: #336eeb;
+    }
+
+    & span {
+      font-size: 2rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+  }
+
+  & .right {
+    align-self: flex-end;
+
+    & a {
+      font-size: 2rem;
+      margin-left: 1rem;
+    }
+  }
+}

@@ -1,5 +1,7 @@
+import ContactLayout from "../components/content/contact/ContactLayout";
+
 const ContactPage = () => {
-  return <h1>The Contact Page</h1>;
+  return <ContactLayout />;
 };
 
 export default ContactPage;

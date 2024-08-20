@@ -1,10 +1,6 @@
 .home {
-  width: 100%;
-  margin: auto;
   background: url("../../assets/home-bg.jpg");
   background-size: cover;
-  height: 100vh;
-  padding: 3rem 20rem;
 }
 
 .desc {
@@ -38,7 +34,7 @@
     font-size: 1.7rem;
     text-transform: uppercase;
     text-decoration: none;
-    transition: all .3s ease;
+    transition: all 0.3s ease;
   }
 
   & a:hover {

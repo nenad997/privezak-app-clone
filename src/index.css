@@ -9,3 +9,16 @@
 html {
   font-size: 62.5%;
 }
+
+.wrapper {
+  width: 100%;
+  margin: auto;
+  height: 100vh;
+  padding: 3rem 20rem;
+}
+
+label,
+input,
+textarea {
+  display: block;
+}

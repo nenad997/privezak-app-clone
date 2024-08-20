@@ -45,7 +45,7 @@ const BottomNavbar = () => {
               }
               to="uslovi-koriscenja"
             >
-              Uslovi korišćenja
+              Uslovi Korišćenja
             </NavLink>
           </li>
           <li className={classes.item}>
