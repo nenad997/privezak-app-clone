@@ -1,0 +1,15 @@
+.service {
+  margin: 3rem 0;
+
+  & h2 {
+    font-size: 4rem;
+    color: #312cc0;
+    margin-bottom: 2.5rem;
+  }
+
+  & p {
+    font-size: 2.1rem;
+    line-height: 3.5rem;
+    letter-spacing: 1px;
+  }
+}
