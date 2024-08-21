@@ -8,6 +8,7 @@ import ContactForm from "../../forms/ContactForm";
 const ContactLayout = () => {
   return (
     <PageWrapper>
+      <h1 className="global__h1">Kontakt</h1>
       <div className={classes.contact}>
         <ContactForm />
         <div className={classes.info}>
