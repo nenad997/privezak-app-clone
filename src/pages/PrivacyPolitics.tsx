@@ -1,5 +1,7 @@
+import PrivacyLayout from "../components/content/privacy/PrivacyLayout";
+
 const PrivacyPoliticsPage = () => {
-  return <h1>The Privacy Politics Page</h1>;
+  return <PrivacyLayout />;
 };
 
 export default PrivacyPoliticsPage;
