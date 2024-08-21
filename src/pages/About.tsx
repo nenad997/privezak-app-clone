@@ -1,5 +1,7 @@
+import AboutContent from "../components/content/about/AboutContent";
+
 const AboutPage = () => {
-  return <h1>The About Page</h1>;
+  return <AboutContent />;
 };
 
 export default AboutPage;

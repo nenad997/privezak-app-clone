@@ -5,9 +5,6 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  position: absolute;
-  bottom: 0;
-  overflow: hidden;
   height: 40px;
   min-height: 40px;
 }
@@ -34,7 +31,6 @@
 
 .item:hover {
   border-bottom: 1px solid white;
-  overflow: hidden;
 }
 
 .info {
