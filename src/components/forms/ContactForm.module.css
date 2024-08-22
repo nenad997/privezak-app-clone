@@ -11,6 +11,10 @@
 .form {
   padding: 1rem;
   gap: 3rem;
+
+  & textarea {
+    width: 90%;
+  }
 }
 
 .controls {
@@ -26,21 +30,4 @@
   & label {
     width: 80%;
   }
-}
-
-.button {
-  padding: 1.2rem 4rem;
-  margin-top: 2rem;
-  cursor: pointer;
-  background-color: #336eeb;
-  color: white;
-  border: none;
-  outline: none;
-  border-radius: 1rem;
-  text-transform: uppercase;
-  transition: all 0.2s ease;
-}
-
-.button:hover {
-  background-color: #e7232f;
 }

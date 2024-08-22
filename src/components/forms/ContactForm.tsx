@@ -2,6 +2,7 @@ import { useState, FormEvent, ChangeEvent } from "react";
 
 import classes from "./ContactForm.module.css";
 import Input, { TextArea } from "../ui/Input";
+import Button from "../ui/Button";
 
 const ContactForm = () => {
   const defaultInputs = {
@@ -12,7 +13,7 @@ const ContactForm = () => {
     poruka: "",
   };
 
-  const [inputs, setInputs] = useState(defaultInputs);
+  const [inputs, setInputs] = useState<typeof defaultInputs>(defaultInputs);
 
   const submitFormHandler = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -86,7 +87,7 @@ const ContactForm = () => {
             />
           </div>
         </div>
-        <div className={classes.text__area}>
+        <div>
           <TextArea
             label="Poruka *"
             config={{
@@ -97,9 +98,13 @@ const ContactForm = () => {
             }}
           />
         </div>
-        <button className={classes.button} type="submit">
+        <Button
+          config={{
+            type: "submit",
+          }}
+        >
           Pošalji
-        </button>
+        </Button>
       </form>
     </div>
   );
