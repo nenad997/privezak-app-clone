@@ -53,3 +53,11 @@ export type Service = {
   text: string;
   topic: string;
 };
+
+export type ContactFormInputs = {
+  ime: string;
+  prezime: string;
+  email: string;
+  telefon: string;
+  poruka: string;
+};

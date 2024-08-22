@@ -3,6 +3,7 @@ import { useState, FormEvent, ChangeEvent } from "react";
 import classes from "./ContactForm.module.css";
 import Input, { TextArea } from "../ui/Input";
 import Button from "../ui/Button";
+import { ContactFormInputs } from "../../util/types";
 
 const ContactForm = () => {
   const defaultInputs = {
@@ -13,7 +14,7 @@ const ContactForm = () => {
     poruka: "",
   };
 
-  const [inputs, setInputs] = useState<typeof defaultInputs>(defaultInputs);
+  const [inputs, setInputs] = useState<ContactFormInputs>(defaultInputs);
 
   const submitFormHandler = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
