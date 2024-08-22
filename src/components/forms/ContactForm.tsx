@@ -20,7 +20,9 @@ const ContactForm = () => {
     console.log(inputs);
   };
 
-  const changeInputHandler = (event: ChangeEvent<HTMLInputElement>) => {
+  const changeInputHandler = (
+    event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = event.target;
 
     setInputs((currentInputs) => ({
@@ -28,7 +30,7 @@ const ContactForm = () => {
       [name]: value,
     }));
   };
-  
+
   return (
     <div className={classes.contact__form}>
       <form className={classes.form} onSubmit={submitFormHandler}>

@@ -1,26 +1,50 @@
-import { FC } from "react";
+import {
+  FC,
+  DetailedHTMLProps,
+  InputHTMLAttributes,
+  TextareaHTMLAttributes,
+} from "react";
 
-interface InputProps {
+import classes from "./Input.module.css";
+
+interface Base {
   label: string;
-  config: object | any;
+}
+
+interface InputProps extends Base {
+  config: DetailedHTMLProps<
+    InputHTMLAttributes<HTMLInputElement>,
+    HTMLInputElement
+  >;
+}
+
+interface TextAreaProps extends Base {
+  config: DetailedHTMLProps<
+    TextareaHTMLAttributes<HTMLTextAreaElement>,
+    HTMLTextAreaElement
+  >;
 }
 
 const Input: FC<InputProps> = ({ label, config }) => {
   return (
     <>
-      <label htmlFor={config.id}>{label}</label>
-      <input {...config} />
+      <label className={classes.label} htmlFor={config.id}>
+        {label}
+      </label>
+      <input className={classes.input} {...config} />
     </>
   );
 };
 
 export default Input;
 
-export const TextArea: FC<InputProps> = ({ label, config }) => {
+export const TextArea: FC<TextAreaProps> = ({ label, config }) => {
   return (
     <>
-      <label htmlFor={config.id}>{label}</label>
-      <textarea {...config} />
+      <label className={classes.label} htmlFor={config.id}>
+        {label}
+      </label>
+      <textarea className={classes.textarea} {...config} />
     </>
   );
 };

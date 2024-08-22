@@ -1,0 +1,22 @@
+.label {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #d4353e;
+}
+
+.input {
+  padding: 0.8rem 1.2rem;
+  font-size: 2rem;
+  border: 0.7px solid #6d9f9f;
+  border-radius: 1.3rem;
+}
+
+.textarea {
+  resize: none;
+  border: 0.7px solid #6d9f9f;
+  width: 90%;
+  height: 20rem;
+  border-radius: 1.3rem;
+  padding: 1rem 0.6rem;
+  font-size: 2rem;
+}
