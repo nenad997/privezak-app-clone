@@ -1,11 +1,7 @@
-import { FC, ReactNode } from "react";
+import { FC } from "react";
 
 import classes from "./Service.module.css";
-
-interface ServiceProps {
-  topic: string;
-  children: ReactNode;
-}
+import { ServiceProps } from "../../util/types";
 
 const Service: FC<ServiceProps> = ({ children, topic }) => {
   return (

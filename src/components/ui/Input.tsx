@@ -1,29 +1,7 @@
-import {
-  FC,
-  DetailedHTMLProps,
-  InputHTMLAttributes,
-  TextareaHTMLAttributes,
-} from "react";
+import { FC } from "react";
 
 import classes from "./Input.module.css";
-
-interface Base {
-  label: string;
-}
-
-interface InputProps extends Base {
-  config: DetailedHTMLProps<
-    InputHTMLAttributes<HTMLInputElement>,
-    HTMLInputElement
-  >;
-}
-
-interface TextAreaProps extends Base {
-  config: DetailedHTMLProps<
-    TextareaHTMLAttributes<HTMLTextAreaElement>,
-    HTMLTextAreaElement
-  >;
-}
+import { InputProps, TextAreaProps } from "../../util/types";
 
 const Input: FC<InputProps> = ({ label, config }) => {
   return (

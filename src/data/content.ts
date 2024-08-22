@@ -1,12 +1,4 @@
-type Content = {
-  id: string;
-  text: string;
-};
-
-type Service = {
-  text: string;
-  topic: string;
-};
+import { Content, Service } from "../util/types";
 
 export const aboutContent: Content[] = [
   {

@@ -1,11 +1,7 @@
-import { FC, ReactNode } from "react";
+import { FC } from "react";
 
 import classes from "./Content.module.css";
-
-interface ContentProps {
-  children: ReactNode;
-  useSeparator?: boolean;
-}
+import { ContentProps } from "../../util/types";
 
 export function Separator() {
   return (

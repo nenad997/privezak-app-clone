@@ -1,11 +1,7 @@
-import { FC, JSX } from "react";
+import { FC } from "react";
 
 import HomeLink from "./HomeLink";
-
-interface PageWrapperProps {
-  children: JSX.Element | JSX.Element[];
-  className?: string;
-}
+import { PageWrapperProps } from "../../util/types";
 
 const PageWrapper: FC<PageWrapperProps> = ({ children, className }) => {
   return (

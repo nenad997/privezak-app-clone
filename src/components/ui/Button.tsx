@@ -1,11 +1,7 @@
-import { FC, ReactNode, ButtonHTMLAttributes } from "react";
+import { FC } from "react";
 
 import classes from "./Button.module.css";
-
-type ButtonProps = {
-  children: ReactNode;
-  config: ButtonHTMLAttributes<HTMLButtonElement>;
-};
+import { ButtonProps } from "../../util/types";
 
 const Button: FC<ButtonProps> = ({ children, config }) => {
   return (
