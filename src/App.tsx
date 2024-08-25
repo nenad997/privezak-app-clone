@@ -19,8 +19,8 @@ const AppRoutes = () => {
 
   return (
     <Routes>
-      <Route Component={MainLayout}>
-        <Route path="/" Component={HomePage} />
+      <Route path="/" Component={MainLayout}>
+        <Route index={true} Component={HomePage} />
         <Route path="/o-nama" Component={AboutPage} />
         <Route path="/kontakt" Component={ContactPage} />
         <Route path="/politika-privatnosti" Component={PrivacyPoliticsPage} />
