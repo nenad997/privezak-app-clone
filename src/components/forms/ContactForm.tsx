@@ -6,7 +6,7 @@ import Button from "../ui/Button";
 import { ContactFormInputs } from "../../util/types";
 
 const ContactForm = () => {
-  const defaultInputs = {
+  const DEFAULT_INPUTS: ContactFormInputs = {
     ime: "",
     prezime: "",
     email: "",
@@ -14,7 +14,7 @@ const ContactForm = () => {
     poruka: "",
   };
 
-  const [inputs, setInputs] = useState<ContactFormInputs>(defaultInputs);
+  const [inputs, setInputs] = useState<ContactFormInputs>(DEFAULT_INPUTS);
 
   const submitFormHandler = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
