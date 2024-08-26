@@ -68,3 +68,30 @@ export const serviceData: Service[] = [
     text: "Koristimo tehnologije remarketinga koje obezbeđuju Google i Facebook za pružanje ciljanog oglašavanja korisnicima koji su već posetili našu veb lokaciju. Prikupljanje i procena korisničkih podataka vrši se samo anonimno. Ovde imate i mogućnost da odbacite upotrebu kolačića tako što ćete napraviti odgovarajuća podešavanja u vašem pregledaču.",
   },
 ];
+
+export const deliveryData: Content[] = [
+  {
+    id: "t1",
+    text: "Nakon što izvršite online porudžbinu, na navedenu email adresu primićete automatsku email poruku da je porudžbina uspešno izvršena.",
+  },
+  {
+    id: "t2",
+    text: "Ta email poruka nije rezervacija artikala – njom se potvrđuje da je Vaša porudžbina primljena, i da je trenutni status Vaše narudžbenice – na čekanju.",
+  },
+  {
+    id: "t3",
+    text: "Po ulasku porudžbine u fazu obrade, i potvrdi da je sa robom sve u redu, na vašu email adresu stići će druga email poruka sa potvrdom da je roba spremna za slanje.",
+  },
+  {
+    id: "t4",
+    text: "U prilogu te poruke dostavljamo i svu potrebnu dokumentaciju neophodnu za realizaciju ove porudžbenice.",
+  },
+  {
+    id: "t5",
+    text: "Kako je raspoloživost artikala indikativna, u slučaju promene porudžbine, mi ćemo Vas kontaktirati u najkraćem roku putem telefona ili emaila",
+  },
+  {
+    id: "t6",
+    text: "Dostava se vrši u saradnji sa kurirskom službom . Kuriri pošiljke donose na adresu za isporuku radnim danima. Molimo Vas da u tom periodu obezbedite da na adresi bude osoba koja može da preuzme pošiljku. Prilikom preuzimanja pošiljke potrebno je da vizuelno pregledate paket i utvrdite da ne postoje neka vidna oštećenja. Ukoliko primetite da je transportna kutija značajno oštećenja i posumnjate da je proizvod možda oštećen, odbijte prijem pošiljke i odmah nas obavestite. Ukoliko je pošiljka naizgled bez oštećenja preuzmite pošiljku",
+  },
+];
