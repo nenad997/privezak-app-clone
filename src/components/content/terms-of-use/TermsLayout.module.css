@@ -1,0 +1,19 @@
+.info {
+  font-size: 2.2rem;
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  letter-spacing: 1px;
+  line-height: 2;
+
+  & span {
+    display: block;
+  }
+}
+
+.contact {
+  display: flex !important;
+  flex-direction: column;
+  gap: 4rem;
+}

@@ -1,5 +1,7 @@
+import TermsLayout from "../components/content/terms-of-use/TermsLayout";
+
 const TermsOfUsePage = () => {
-  return <h1>The Terms of use Page</h1>;
+  return <TermsLayout />;
 };
 
 export default TermsOfUsePage;
