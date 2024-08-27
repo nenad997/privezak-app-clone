@@ -15,6 +15,8 @@ html {
   margin: auto;
   min-height: 100vh;
   padding: 3rem 20rem;
+  background: url("./assets/home-bg.jpg");
+  background-size: cover;
 }
 
 label,
@@ -32,4 +34,10 @@ textarea {
   color: #312cc0;
   font-size: 5rem;
   font-weight: 700;
+}
+
+@media screen and (max-width: 1224px) {
+  .global__wrapper {
+    padding: 0;
+  }
 }

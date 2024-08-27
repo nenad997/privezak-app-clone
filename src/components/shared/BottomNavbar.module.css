@@ -40,3 +40,24 @@
   font-size: 1.7rem;
   margin-right: 1rem;
 }
+
+@media screen and (max-width: 1224px) {
+  .footer {
+    padding: 5px 10px;
+    gap: 20px;
+  }
+
+  .item {
+    display: flex;
+    align-items: center;
+  }
+
+  .item a {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .info {
+    font-size: 1.5rem;
+  }
+}

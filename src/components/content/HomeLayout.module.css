@@ -41,3 +41,14 @@
     background-color: #ca232e;
   }
 }
+
+@media screen and (max-width: 1224px) {
+  .desc {
+    flex-direction: row;
+    justify-content: center;
+
+    & p {
+      font-size: 2rem;
+    }
+  }
+}

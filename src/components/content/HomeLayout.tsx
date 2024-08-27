@@ -4,7 +4,9 @@ import PageWrapper from "../ui/PageWrapper";
 const HomeLayout = () => {
   return (
     <PageWrapper className={classes.home}>
-      <div className={classes.desc}>
+      <div
+        className={classes.desc}
+      >
         <h1>Napravi Privezak!</h1>
         <p>
           Biraj <span>tip, oblik, boju i tekst</span> koji izrazava tvoj{" "}

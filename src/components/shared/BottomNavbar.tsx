@@ -1,8 +1,11 @@
 import { NavLink } from "react-router-dom";
+import { useMediaQuery } from "react-responsive";
 
 import classes from "./BottomNavbar.module.css";
 
 const BottomNavbar = () => {
+  const isTabletOrMobile = useMediaQuery({ maxWidth: 1224 });
+
   return (
     <footer className={classes.footer}>
       <nav className={classes.nav}>
@@ -61,7 +64,8 @@ const BottomNavbar = () => {
         </ul>
       </nav>
       <p className={classes.info}>
-        @ {new Date().getFullYear()} | Dizajner Nenad Matijević
+        @ {new Date().getFullYear()}{" "}
+        {!isTabletOrMobile && <span>| Dizajner Nenad Matijević</span>}
       </p>
     </footer>
   );
