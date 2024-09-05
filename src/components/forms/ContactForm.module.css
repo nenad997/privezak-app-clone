@@ -11,10 +11,6 @@
 .form {
   padding: 1rem;
   gap: 3rem;
-
-  & textarea {
-    width: 90%;
-  }
 }
 
 .controls {
@@ -29,5 +25,9 @@
   & input,
   & label {
     width: 80%;
+  }
+
+  & textarea {
+    width: 90%;
   }
 }

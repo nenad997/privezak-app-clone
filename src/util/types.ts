@@ -11,8 +11,14 @@ export type ButtonProps = {
   config: ButtonHTMLAttributes<HTMLButtonElement>;
 };
 
+export type ValidationConfig = {
+  errors: ValidationError[];
+  path: string;
+};
+
 export interface Base {
   label: string;
+  validationConfig: ValidationConfig;
 }
 
 export interface InputProps extends Base {
@@ -61,3 +67,8 @@ export type ContactFormInputs = {
   telefon: string;
   poruka: string;
 };
+
+export interface ValidationError {
+  message?: string;
+  path: string;
+}
